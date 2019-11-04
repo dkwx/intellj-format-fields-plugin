@@ -1,0 +1,76 @@
+<idea-plugin>
+  <id>site.wangxing.plugin.format.field.pyramid</id>
+  <name>FormatFieldPyramid</name>
+  <version>1.0</version>
+  <vendor email="daikaiwy@163.com" url="http://www.wangxing.site">wangxing's restaurant</vendor>
+
+  <description>
+    这个插件可以将Java文件的全局字段排序，按代码的长度由短到长排序。
+    This plug-in can sort the global fields of Java files, from short to long, according to the length of the code.
+    For example:
+    int i;
+    @Resource
+    Service service;
+    boolean bool;
+
+    After handle:
+    int i;
+    boolean bool;
+    @Resource
+    Service service;
+  </description>
+
+  <change-notes>
+    a.v1.0 author daikai date 2019-11-02
+    more details
+    /**
+    * int
+    */
+    int i;
+
+    /*
+    * service
+    */
+    @Resource
+    Service service;
+
+    // bool
+    boolean bool;
+
+    after handle:
+    /**
+    * int
+    */
+    int i;
+    // bool
+    boolean bool;
+    /*
+    * service
+    */
+    @Resource
+    Service service;
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="DkPlugins.Format.Pyramid.Action" class="com.dk.pyramid.action.FormatFieldWithPyramidAction"
+            text="FormatFieldWithPyramid" description="Will format the code as a pyramid">
+      <add-to-group group-id="CodeFormatGroup" anchor="after" relative-to-action="ReformatCode"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="meta alt j"/>
+    </action>
+  </actions>
+
+</idea-plugin>
