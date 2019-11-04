@@ -1,0 +1,1 @@
+# intellj-format-fields-plugin
