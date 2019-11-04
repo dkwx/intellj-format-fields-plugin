@@ -164,7 +164,7 @@ public class FormatFieldWithPyramidAction extends AnAction {
         List<PsiElement> copySortFieldList = sortFieldList.stream().map(PsiField::copy).collect(Collectors.toList());
         WriteCommandAction.runWriteCommandAction(project, () -> {
             // 删除旧的
-            sortFieldList.forEach((f) -> ElementOptAssist.deleteElement(project, f));
+            sortFieldList.forEach((f) -> ElementOptAssist.deleteElement(f));
             if (null == sortModel || sortModel.getInsertType() == SelectSortModel.InsertType.ADD) {
                 // 添加新的
                 copySortFieldList.forEach((f) -> ElementOptAssist.addElement(currentClass, f));
