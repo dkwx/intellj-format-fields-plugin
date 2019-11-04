@@ -7,6 +7,7 @@ import com.dk.pyramid.model.SelectSortModel;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
+import com.intellij.openapi.command.WriteCommandAction;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.SelectionModel;
 import com.intellij.openapi.project.Project;
@@ -161,23 +162,24 @@ public class FormatFieldWithPyramidAction extends AnAction {
             return 0;
         }
         List<PsiElement> copySortFieldList = sortFieldList.stream().map(PsiField::copy).collect(Collectors.toList());
-        // 删除旧的
-        sortFieldList.forEach((f) -> ElementOptAssist.deleteElement(project, f));
-        if (null == sortModel || sortModel.getInsertType() == SelectSortModel.InsertType.ADD) {
-            // 添加新的
-            copySortFieldList.forEach((f) -> ElementOptAssist.addElement(project, currentClass, f));
-        } else {
-            // 如果是往后追加，则倒序追加
-            if (sortModel.getInsertType() == SelectSortModel.InsertType.ADD_AFTER) {
-                for (int i = copySortFieldList.size() - 1; i >= 0; i--) {
-                    ElementOptAssist.addAfterElement(project, currentClass, copySortFieldList.get(i), sortModel.getLocationElement());
-                }
+        WriteCommandAction.runWriteCommandAction(project, () -> {
+            // 删除旧的
+            sortFieldList.forEach((f) -> ElementOptAssist.deleteElement(project, f));
+            if (null == sortModel || sortModel.getInsertType() == SelectSortModel.InsertType.ADD) {
+                // 添加新的
+                copySortFieldList.forEach((f) -> ElementOptAssist.addElement(currentClass, f));
             } else {
-                // 往前追加，则正序
-                copySortFieldList.forEach((f) -> ElementOptAssist.addBeforeElement(project, currentClass, f, sortModel.getLocationElement()));
+                // 如果是往后追加，则倒序追加
+                if (sortModel.getInsertType() == SelectSortModel.InsertType.ADD_AFTER) {
+                    for (int i = copySortFieldList.size() - 1; i >= 0; i--) {
+                        ElementOptAssist.addAfterElement(currentClass, copySortFieldList.get(i), sortModel.getLocationElement());
+                    }
+                } else {
+                    // 往前追加，则正序
+                    copySortFieldList.forEach((f) -> ElementOptAssist.addBeforeElement(currentClass, f, sortModel.getLocationElement()));
+                }
             }
-        }
-
+        });
         return 1;
     }
 

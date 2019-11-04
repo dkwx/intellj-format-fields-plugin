@@ -14,21 +14,15 @@ public class ElementOptAssist {
         WriteCommandAction.runWriteCommandAction(project, () -> element.delete());
     }
 
-    public static void addElement(Project project, PsiClass currentClass, PsiElement element) {
-        WriteCommandAction.runWriteCommandAction(project, () -> {
-            currentClass.add(element);
-        });
+    public static void addElement(PsiClass currentClass, PsiElement element) {
+        currentClass.add(element);
     }
 
-    public static void addAfterElement(Project project, PsiClass currentClass, PsiElement addElement, PsiElement locationElement) {
-        WriteCommandAction.runWriteCommandAction(project, () -> {
-            currentClass.addAfter(addElement, locationElement);
-        });
+    public static void addAfterElement(PsiClass currentClass, PsiElement addElement, PsiElement locationElement) {
+        currentClass.addAfter(addElement, locationElement);
     }
 
-    public static void addBeforeElement(Project project, PsiClass currentClass, PsiElement addElement, PsiElement locationElement) {
-        WriteCommandAction.runWriteCommandAction(project, () -> {
-            currentClass.addBefore(addElement, locationElement);
-        });
+    public static void addBeforeElement(PsiClass currentClass, PsiElement addElement, PsiElement locationElement) {
+        currentClass.addBefore(addElement, locationElement);
     }
 }
