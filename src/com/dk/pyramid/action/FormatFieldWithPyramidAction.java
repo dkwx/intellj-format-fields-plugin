@@ -16,6 +16,7 @@ import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiField;
 import com.intellij.psi.PsiFile;
 import com.intellij.psi.PsiJavaFile;
+import com.intellij.psi.PsiMethod;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.compress.utils.Lists;
@@ -130,8 +131,19 @@ public class FormatFieldWithPyramidAction extends AnAction {
         if (CollectionUtils.isEmpty(sortFieldList)) {
             return 0;
         }
+        // 获取排序依据
+        SelectSortModel sortModel = getSelectSortModel(currentClass, start, end, sortFieldList);
+        sortFieldList.stream().mapToInt((f) -> (start - f.getTextRange().getEndOffset()));
 
+        sortFieldList = sortFieldList.stream().
+                filter((f) -> f.getTextRange().getEndOffset() <= end && f.getTextRange().getEndOffset() >= start)
+                .collect(Collectors.toList());
 
+        return sortByFields(project, currentClass, sortFieldList, sortModel);
+    }
+
+    @NotNull
+    private SelectSortModel getSelectSortModel(PsiClass currentClass, int start, int end, List<PsiField> sortFieldList) {
         SelectSortModel sortModel;
         PsiField location = null;
         // 先从头往后找
@@ -154,6 +166,13 @@ public class FormatFieldWithPyramidAction extends AnAction {
                 }
             }
             if (location == null) {
+                PsiMethod[] psiMethods = currentClass.getAllMethods();
+                // 如果没有属性，则找第一个方法，加在它前面
+                if (!ArrayUtils.isEmpty(psiMethods)) {
+                    sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD_BEFORE, psiMethods[0]);
+                } else {
+                    sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD, location);
+                }
                 sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD, location);
             } else {
                 sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD_BEFORE, location);
@@ -161,13 +180,7 @@ public class FormatFieldWithPyramidAction extends AnAction {
         } else {
             sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD_AFTER, location);
         }
-        sortFieldList.stream().mapToInt((f) -> (start - f.getTextRange().getEndOffset()));
-
-        sortFieldList = sortFieldList.stream().
-                filter((f) -> f.getTextRange().getEndOffset() <= end && f.getTextRange().getEndOffset() >= start)
-                .collect(Collectors.toList());
-
-        return sortByFields(project, currentClass, sortFieldList, sortModel);
+        return sortModel;
     }
 
 
