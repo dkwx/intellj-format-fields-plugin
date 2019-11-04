@@ -74,7 +74,6 @@ public class SortFieldAssist {
                 } else {
                     sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD, location);
                 }
-                sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD, location);
             } else {
                 sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD_BEFORE, location);
             }
