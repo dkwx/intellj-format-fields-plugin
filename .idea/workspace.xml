@@ -150,6 +150,9 @@
       <find>notify</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -187,6 +190,7 @@
     <option name="width" value="1440" />
     <option name="height" value="830" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -235,13 +239,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pyramid" type="462c0819:PsiDirectoryNode" />
               <item name="assist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pyramid" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -316,15 +313,15 @@
       <workItem from="1572767311219" duration="26774000" />
       <workItem from="1572800237315" duration="89000" />
       <workItem from="1572800729051" duration="35000" />
-      <workItem from="1572800789555" duration="7277000" />
+      <workItem from="1572800789555" duration="7521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35885000" />
+    <option name="totallyTimeSpent" value="36129000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="24" width="1440" height="830" extended-state="6" />
+    <frame x="484" y="53" width="1440" height="830" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49791667" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" sideWeight="0.50208336" side_tool="true" visible="true" weight="0.2639485" />
