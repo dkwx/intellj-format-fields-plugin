@@ -116,7 +116,7 @@ public class FormatFieldWithPyramidAction extends AnAction {
         List<PsiField> sortFieldList = Arrays.asList(fields);
         sortFieldList = filterBlankField(sortFieldList);
         // 重新给其赋值
-        return sortByFields(project, currentClass, sortFieldList);
+        return sortByFields(project, currentClass, sortFieldList, null);
     }
 
     private int sortPsiClass(Project project, PsiClass currentClass, int start, int end) {
@@ -171,7 +171,7 @@ public class FormatFieldWithPyramidAction extends AnAction {
     }
 
 
-    private int sortByFields(Project project, PsiClass currentClass, List<PsiField> sortFieldList) {
+    private int sortByFields(Project project, PsiClass currentClass, List<PsiField> sortFieldList, SelectSortModel sortModel) {
         if (CollectionUtils.isEmpty(sortFieldList)) {
             return 0;
         }
@@ -186,8 +186,21 @@ public class FormatFieldWithPyramidAction extends AnAction {
         List<PsiElement> copySortFieldList = sortFieldList.stream().map(PsiField::copy).collect(Collectors.toList());
         // 删除旧的
         sortFieldList.forEach((f) -> ElementOptAssist.deleteElement(project, f));
-        // 添加新的
-        copySortFieldList.forEach((f) -> ElementOptAssist.addElement(project, currentClass, f));
+        if (null == sortModel || sortModel.getInsertType() == SelectSortModel.InsertType.ADD) {
+            // 添加新的
+            copySortFieldList.forEach((f) -> ElementOptAssist.addElement(project, currentClass, f));
+        } else {
+            // 如果是往后追加，则倒序追加
+            if (sortModel.getInsertType() == SelectSortModel.InsertType.ADD_AFTER) {
+                for (int i = copySortFieldList.size() - 1; i >= 0; i--) {
+                    ElementOptAssist.addAfterElement(project, currentClass, copySortFieldList.get(i), sortModel.getLocationElement());
+                }
+            } else {
+                // 往前追加，则正序
+                copySortFieldList.forEach((f) -> ElementOptAssist.addBeforeElement(project, currentClass, f, sortModel.getLocationElement()));
+            }
+        }
+
         return 1;
     }
 
