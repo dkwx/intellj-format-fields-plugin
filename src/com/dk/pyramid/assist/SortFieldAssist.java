@@ -4,10 +4,13 @@ import com.dk.pyramid.model.SelectSortModel;
 import com.intellij.psi.PsiClass;
 import com.intellij.psi.PsiField;
 import com.intellij.psi.PsiMethod;
+import com.intellij.psi.impl.source.PsiExtensibleClass;
 
+import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.ArrayUtils;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -68,11 +71,19 @@ public class SortFieldAssist {
             }
             if (location == null) {
                 PsiMethod[] psiMethods = currentClass.getAllMethods();
-                // 如果没有属性，则找第一个方法，加在它前面
-                if (!ArrayUtils.isEmpty(psiMethods)) {
-                    sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD_BEFORE, psiMethods[0]);
+                if (ArrayUtils.isEmpty(psiMethods)) {
+                    // 如果没有属性，则找第一个方法，加在它前面
+                    sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD, null);
                 } else {
-                    sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD, location);
+                    List<PsiMethod> psiMethodList = Arrays.asList(psiMethods);
+                    if (currentClass instanceof PsiExtensibleClass) {
+                        psiMethodList = ((PsiExtensibleClass) currentClass).getOwnMethods();
+                    }
+                    if (CollectionUtils.isNotEmpty(psiMethodList)) {
+                        sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD_BEFORE, psiMethodList.get(0));
+                    } else {
+                        sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD, null);
+                    }
                 }
             } else {
                 sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD_BEFORE, location);

@@ -16,6 +16,7 @@ import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiField;
 import com.intellij.psi.PsiFile;
 import com.intellij.psi.PsiJavaFile;
+import com.intellij.psi.impl.source.PsiExtensibleClass;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.compress.utils.Lists;
@@ -99,8 +100,14 @@ public class FormatFieldWithPyramidAction extends AnAction {
         List<PsiClass> allClassList = Lists.newArrayList();
         Arrays.stream(classes).forEach((c) -> {
             allClassList.add(c);
-            if (!ArrayUtils.isEmpty(c.getAllInnerClasses())) {
-                allClassList.addAll(Arrays.asList(c.getAllInnerClasses()));
+            List<PsiClass> innerClasses;
+            if (c instanceof PsiExtensibleClass) {
+                innerClasses = ((PsiExtensibleClass) c).getOwnInnerClasses();
+            } else {
+                innerClasses = ArrayUtils.isEmpty(c.getAllInnerClasses()) ? Lists.newArrayList() : Arrays.asList(c.getAllInnerClasses());
+            }
+            if (CollectionUtils.isNotEmpty(innerClasses)) {
+                allClassList.addAll(innerClasses);
             }
         });
         return allClassList;
@@ -114,7 +121,7 @@ public class FormatFieldWithPyramidAction extends AnAction {
         }
         // List的底层结构数组直接被替换，所以排序后顺序会变
         List<PsiField> sortFieldList = Arrays.asList(fields);
-        sortFieldList = filterBlankField(sortFieldList);
+        sortFieldList = filterBlankField(currentClass, sortFieldList);
         // 重新给其赋值
         return sortByFields(project, currentClass, sortFieldList, null);
     }
@@ -126,7 +133,7 @@ public class FormatFieldWithPyramidAction extends AnAction {
         }
         // List的底层结构数组直接被替换，所以排序后顺序会变
         List<PsiField> sortFieldList = Arrays.asList(fields);
-        sortFieldList = filterBlankField(sortFieldList);
+        sortFieldList = filterBlankField(currentClass, sortFieldList);
         if (CollectionUtils.isEmpty(sortFieldList)) {
             return 0;
         }
@@ -176,7 +183,13 @@ public class FormatFieldWithPyramidAction extends AnAction {
 
 
     @NotNull
-    private List<PsiField> filterBlankField(List<PsiField> sortFieldList) {
+    private List<PsiField> filterBlankField(PsiClass currentClass, List<PsiField> sortFieldList) {
+        if (currentClass instanceof PsiExtensibleClass) {
+            sortFieldList = ((PsiExtensibleClass) currentClass).getOwnFields();
+            if (CollectionUtils.isEmpty(sortFieldList)) {
+                return Lists.newArrayList();
+            }
+        }
         // 过滤@Slf4j注解生成的属性
         return sortFieldList.stream().filter((f) -> StringUtils.isNotBlank(f.getText())).collect(Collectors.toList());
     }
