@@ -1,6 +1,12 @@
 package com.dk.pyramid.assist;
 
+import com.dk.pyramid.model.SelectSortModel;
+import com.intellij.psi.PsiClass;
 import com.intellij.psi.PsiField;
+import com.intellij.psi.PsiMethod;
+
+import org.apache.commons.lang.ArrayUtils;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -35,5 +41,46 @@ public class SortFieldAssist {
     public static int getSortCondition(PsiField f) {
         String[] strs = f.getText().split("\n");
         return strs[strs.length - 1].trim().length();
+    }
+
+    @NotNull
+    public static SelectSortModel getSelectSortModel(PsiClass currentClass, int start, int end, List<PsiField> sortFieldList) {
+        SelectSortModel sortModel;
+        PsiField location = null;
+        // 先从头往后找
+        int min = Integer.MAX_VALUE;
+        for (PsiField psiField : sortFieldList) {
+            int temp = start - psiField.getTextRange().getEndOffset();
+            if (temp > 0 && temp < min) {
+                location = psiField;
+                min = temp;
+            }
+        }
+        // 如果没找到，从后往前找
+        if (location == null) {
+            min = Integer.MAX_VALUE;
+            for (PsiField psiField : sortFieldList) {
+                int temp = psiField.getTextRange().getStartOffset() - end;
+                if (temp > 0 && temp < min) {
+                    location = psiField;
+                    min = temp;
+                }
+            }
+            if (location == null) {
+                PsiMethod[] psiMethods = currentClass.getAllMethods();
+                // 如果没有属性，则找第一个方法，加在它前面
+                if (!ArrayUtils.isEmpty(psiMethods)) {
+                    sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD_BEFORE, psiMethods[0]);
+                } else {
+                    sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD, location);
+                }
+                sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD, location);
+            } else {
+                sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD_BEFORE, location);
+            }
+        } else {
+            sortModel = new SelectSortModel(start, end, SelectSortModel.InsertType.ADD_AFTER, location);
+        }
+        return sortModel;
     }
 }
