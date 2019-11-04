@@ -7,14 +7,14 @@
         Unselected, the entire file is formatted by default, and idea is automatically grouped by the modifier of the property, which unfortunately cannot be changed at this time.
         Selected content, will only format selected content, and completely sorted by length, no grouping, it is recommended that selected content format.
 
-        格式化例子见下:
+        # 格式化例子见下:
         For example:
         int i;
         @Resource
         Service service;
         boolean bool;
 
-        After handle:
+       # After handle:
         int i;
         boolean bool;
         @Resource
