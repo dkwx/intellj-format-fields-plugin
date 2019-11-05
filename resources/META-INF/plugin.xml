@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>site.wangxing.plugin.format.field.pyramid</id>
     <name>FormatFieldPyramid</name>
-    <version>1.0</version>
+    <version>1.1</version>
 <!--    <vendor email="daikaiwy@163.com" url="https://github.com/dkwx/intellj-format-fields-plugin">wangxing's restaurant</vendor>-->
     <vendor email="daikaiwy@163.com" url="https://www.wangxing.site">wangxing's restaurant</vendor>
 
@@ -76,7 +76,7 @@
         <action id="DkPlugins.Format.Pyramid.Action" class="com.dk.pyramid.action.FormatFieldWithPyramidAction"
                 text="FormatFieldWithPyramid" description="Will format the code as a pyramid">
             <add-to-group group-id="CodeFormatGroup" anchor="after" relative-to-action="ReformatCode"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="shift alt x"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift alt j"/>
         </action>
     </actions>
 
