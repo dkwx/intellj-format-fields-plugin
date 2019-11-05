@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="857b2834-97bb-4b14-a556-ba18401009e7" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dk/pyramid/model/SelectSortModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dk/pyramid/model/SelectSortModel.java" afterDir="false" />
-    </list>
+    <list default="true" id="857b2834-97bb-4b14-a556-ba18401009e7" name="默认更改列表" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dk/pyramid/model/SelectSortModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
               <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="89">
+              <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -55,12 +61,12 @@
         <option value="$PROJECT_DIR$/src/com/dk/pyramid/assist/NotifyUtils.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/dk/pyramid/assist/SortFieldAssist.java" />
         <option value="$PROJECT_DIR$/src/com/dk/pyramid/assist/ElementOptAssist.java" />
         <option value="$PROJECT_DIR$/src/com/dk/pyramid/action/FormatFieldWithPyramidAction.java" />
         <option value="$PROJECT_DIR$/src/com/dk/pyramid/model/SelectSortModel.java" />
+        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
       </list>
     </option>
   </component>
@@ -81,7 +87,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="-1652" />
+    <option name="y" value="47" />
     <option name="width" value="1440" />
     <option name="height" value="830" />
   </component>
@@ -91,12 +98,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
@@ -120,8 +140,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,6 +218,7 @@
       <workItem from="1572881537717" duration="3327000" />
       <workItem from="1572884962308" duration="37000" />
       <workItem from="1572885021702" duration="54000" />
+      <workItem from="1572919559022" duration="263000" />
     </task>
     <task id="LOCAL-00001" summary="增加序列">
       <created>1572870023353</created>
@@ -348,17 +367,23 @@
       <option name="project" value="LOCAL" />
       <updated>1572884886438</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="重新提交jar包">
+      <created>1572919691779</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1572919691779</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48334000" />
+    <option name="totallyTimeSpent" value="48597000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="830" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1652" y="47" width="1440" height="830" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49791667" weight="0.2932761" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49791667" visible="true" weight="0.2932761" />
       <window_info id="Structure" order="1" sideWeight="0.50208336" side_tool="true" weight="0.2639485" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -379,7 +404,7 @@
       <window_info anchor="bottom" id="Tool Output" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.29090908" />
+      <window_info anchor="bottom" id="Version Control" order="14" visible="true" weight="0.29090908" />
       <window_info anchor="bottom" id="ANTLR Preview" order="15" />
       <window_info anchor="bottom" id="调试" order="16" sideWeight="0.49928468" weight="0.43356642" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -831,13 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dk/pyramid/assist/NotifyUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -969,6 +987,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
         </state>
       </provider>
     </entry>

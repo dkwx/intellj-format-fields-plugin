@@ -76,7 +76,7 @@
         <action id="DkPlugins.Format.Pyramid.Action" class="com.dk.pyramid.action.FormatFieldWithPyramidAction"
                 text="FormatFieldWithPyramid" description="Will format the code as a pyramid">
             <add-to-group group-id="CodeFormatGroup" anchor="after" relative-to-action="ReformatCode"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="meta alt j"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift alt x"/>
         </action>
     </actions>
 
