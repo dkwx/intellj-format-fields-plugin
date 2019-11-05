@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="857b2834-97bb-4b14-a556-ba18401009e7" name="默认更改列表" comment="" />
+    <list default="true" id="857b2834-97bb-4b14-a556-ba18401009e7" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dk/pyramid/model/SelectSortModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dk/pyramid/model/SelectSortModel.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,102 +18,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/dk/pyramid/action/FormatFieldWithPyramidAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="97" selection-start-line="97" selection-end-line="97" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dk/pyramid/assist/ElementOptAssist.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#367#368#0" expanded="true" />
-                <element signature="e#400#401#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dk/pyramid/assist/SortFieldAssist.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-163">
-              <caret line="49" column="90" selection-start-line="49" selection-start-column="87" selection-end-line="49" selection-end-column="90" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/List.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="210" column="12" selection-start-line="210" selection-start-column="12" selection-end-line="210" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dk/pyramid/model/SelectSortModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/commons-collections-3.2.2.jar!/org/apache/commons/collections/list/AbstractLinkedList.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="113" column="58" selection-start-line="113" selection-start-column="47" selection-end-line="113" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/psi/PsiField.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/psi/PsiMember.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/psi/NavigatablePsiElement.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/psi/PsiElement.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="169" column="14" selection-start-line="169" selection-start-column="4" selection-end-line="169" selection-end-column="14" />
+            <state relative-caret-position="108">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -147,9 +58,9 @@
         <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/dk/pyramid/assist/SortFieldAssist.java" />
-        <option value="$PROJECT_DIR$/src/com/dk/pyramid/model/SelectSortModel.java" />
         <option value="$PROJECT_DIR$/src/com/dk/pyramid/assist/ElementOptAssist.java" />
         <option value="$PROJECT_DIR$/src/com/dk/pyramid/action/FormatFieldWithPyramidAction.java" />
+        <option value="$PROJECT_DIR$/src/com/dk/pyramid/model/SelectSortModel.java" />
       </list>
     </option>
   </component>
@@ -180,7 +91,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,17 +101,6 @@
             <path>
               <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -209,28 +108,6 @@
               <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pyramid" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pyramid" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pyramid" type="462c0819:PsiDirectoryNode" />
-              <item name="assist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pyramid" type="462c0819:PsiDirectoryNode" />
-              <item name="assist" type="462c0819:PsiDirectoryNode" />
-              <item name="NotifyUtils" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
@@ -243,6 +120,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -319,7 +197,9 @@
       <workItem from="1572874721320" duration="108000" />
       <workItem from="1572874854483" duration="3708000" />
       <workItem from="1572879274747" duration="201000" />
-      <workItem from="1572881537717" duration="3147000" />
+      <workItem from="1572881537717" duration="3327000" />
+      <workItem from="1572884962308" duration="37000" />
+      <workItem from="1572885021702" duration="54000" />
     </task>
     <task id="LOCAL-00001" summary="增加序列">
       <created>1572870023353</created>
@@ -461,16 +341,24 @@
       <option name="project" value="LOCAL" />
       <updated>1572884524800</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="重新提交jar包">
+      <created>1572884886438</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1572884886438</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48063000" />
+    <option name="totallyTimeSpent" value="48334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49791667" visible="true" weight="0.28540772" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49791667" weight="0.2932761" />
       <window_info id="Structure" order="1" sideWeight="0.50208336" side_tool="true" weight="0.2639485" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -491,9 +379,9 @@
       <window_info anchor="bottom" id="Tool Output" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.29120198" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.29090908" />
       <window_info anchor="bottom" id="ANTLR Preview" order="15" />
-      <window_info active="true" anchor="bottom" id="调试" order="16" sideWeight="0.49928468" visible="true" weight="0.43356642" />
+      <window_info anchor="bottom" id="调试" order="16" sideWeight="0.49928468" weight="0.43356642" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -506,7 +394,7 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49791667" visible="true" weight="0.28540772" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49791667" visible="true" weight="0.2932761" />
       <window_info id="Structure" order="1" sideWeight="0.50208336" side_tool="true" weight="0.2639485" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -527,9 +415,9 @@
       <window_info anchor="bottom" id="Tool Output" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.29120198" />
+      <window_info anchor="bottom" id="Version Control" order="14" visible="true" weight="0.29090908" />
       <window_info anchor="bottom" id="ANTLR Preview" order="15" />
-      <window_info anchor="bottom" id="调试" order="16" sideWeight="0.49928468" weight="0.3846154" />
+      <window_info anchor="bottom" id="调试" order="16" sideWeight="0.49928468" weight="0.43356642" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -597,7 +485,8 @@
     <MESSAGE value="处理父子类的关系" />
     <MESSAGE value="一批次执行完" />
     <MESSAGE value="删除也一次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除也一次提交" />
+    <MESSAGE value="重新提交jar包" />
+    <option name="LAST_COMMIT_MESSAGE" value="重新提交jar包" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -639,12 +528,6 @@
           <line>97</line>
           <properties />
           <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/com/dk/pyramid/model/SelectSortModel.java</url>
-          <line>11</line>
-          <properties field="startLine" class="com.dk.pyramid.model.SelectSortModel" />
-          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1010,16 +893,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dk/pyramid/action/FormatFieldWithPyramidAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dk/pyramid/assist/ElementOptAssist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dk/pyramid/assist/SortFieldAssist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="49" column="90" selection-start-line="49" selection-start-column="87" selection-end-line="49" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
+        <state relative-caret-position="3927">
           <caret line="210" column="12" selection-start-line="210" selection-start-column="12" selection-end-line="210" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/commons-collections-3.2.2.jar!/org/apache/commons/collections/list/AbstractLinkedList.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
+        <state relative-caret-position="1743">
           <caret line="113" column="58" selection-start-line="113" selection-start-column="47" selection-end-line="113" selection-end-column="58" />
         </state>
       </provider>
@@ -1027,7 +940,7 @@
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/psi/PsiField.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1047,47 +960,15 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/psi/PsiElement.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
+        <state relative-caret-position="3171">
           <caret line="169" column="14" selection-start-line="169" selection-start-column="4" selection-end-line="169" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dk/pyramid/model/SelectSortModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dk/pyramid/assist/SortFieldAssist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
-          <caret line="49" column="90" selection-start-line="49" selection-start-column="87" selection-end-line="49" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dk/pyramid/assist/ElementOptAssist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dk/pyramid/action/FormatFieldWithPyramidAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
         </state>
       </provider>
     </entry>

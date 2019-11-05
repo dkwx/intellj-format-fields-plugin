@@ -8,6 +8,7 @@ import com.intellij.psi.PsiElement;
  */
 public class SelectSortModel {
 
+
     private int endLine;
     private int startLine;
     /**

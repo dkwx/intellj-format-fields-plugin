@@ -2,7 +2,8 @@
     <id>site.wangxing.plugin.format.field.pyramid</id>
     <name>FormatFieldPyramid</name>
     <version>1.0</version>
-    <vendor email="daikaiwy@163.com" url="https://github.com/dkwx/intellj-format-fields-plugin">wangxing's restaurant</vendor>
+<!--    <vendor email="daikaiwy@163.com" url="https://github.com/dkwx/intellj-format-fields-plugin">wangxing's restaurant</vendor>-->
+    <vendor email="daikaiwy@163.com" url="https://www.wangxing.site">wangxing's restaurant</vendor>
 
     <description>
         这个插件可以将Java文件的全局字段排序，按代码的长度由短到长排序。
@@ -58,7 +59,7 @@
     </change-notes>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-    <idea-version since-build="173.0"/>
+    <idea-version since-build="183.0"/>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
