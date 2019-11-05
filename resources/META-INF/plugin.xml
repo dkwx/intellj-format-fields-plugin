@@ -15,18 +15,18 @@
           <dd> Unselected, the entire file is formatted by default, and idea is automatically grouped by the modifier of the property, which unfortunately cannot be changed at this time. 
         Selected content, will only format selected content, and completely sorted by length, no grouping, it is recommended that selected content format. </dd>
         </dl>
-         格式化例子见下:
-        For example:
-        int i;
-        @Resource
-        Service service;
-        boolean bool;
+         格式化例子见下:</br>
+        For example:</br>
+        int i;</br>
+        @Resource</br>
+        Service service;</br>
+        boolean bool;</br></br>
 
-        After handle:
-        int i;
-        boolean bool;
-        @Resource
-        Service service;
+        After handle:</br>
+        int i;</br>
+        boolean bool;</br>
+        @Resource</br>
+        Service service;</br>
         ]]>
 
 
@@ -34,34 +34,34 @@
 
     <change-notes>
         <![CDATA[
-        a.v1.0 author daikai date 2019-11-02
-        more details
-        /**
-        * int
-        */
-        int i;
+        a.v1.0 author daikai date 2019-11-02</br>
+        more details</br>
+        /**</br>
+        * int</br>
+        */</br>
+        int i;</br></br>
 
-        /*
-        * service
-        */
-        @Resource
-        Service service;
+        /*</br>
+        * service</br>
+        */</br>
+        @Resource</br>
+        Service service;</br></br>
 
-        // bool
-        boolean bool;
+        // bool</br>
+        boolean bool;</br></br>
 
-        after handle:
-        /**
-        * int
-        */
-        int i;
-        // bool
-        boolean bool;
-        /*
-        * service
-        */
-        @Resource
-        Service service;
+        after handle:</br>
+        /**</br>
+        * int</br>
+        */</br>
+        int i;</br>
+        // bool</br>
+        boolean bool;</br>
+        /*</br>
+        * service</br>
+        */</br>
+        @Resource</br>
+        Service service;</br>
          ]]>
     </change-notes>
 
