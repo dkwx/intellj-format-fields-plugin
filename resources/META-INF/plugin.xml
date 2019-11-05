@@ -15,18 +15,20 @@
           <dd> Unselected, the entire file is formatted by default, and idea is automatically grouped by the modifier of the property, which unfortunately cannot be changed at this time. 
         Selected content, will only format selected content, and completely sorted by length, no grouping, it is recommended that selected content format. </dd>
         </dl>
-         格式化例子见下:</br>
-        For example:</br>
-        int i;</br>
-        @Resource</br>
-        Service service;</br>
-        boolean bool;</br></br>
-
-        After handle:</br>
-        int i;</br>
-        boolean bool;</br>
-        @Resource</br>
-        Service service;</br>
+       <li>
+       <ul>
+       <li> 格式化例子见下:</li>
+       <li>For example:</li>
+       <li>int i;</li>
+       <li> @Resource</li>
+       <li>Service service;</li>
+       <li> boolean bool;</li>
+       <li> After handle:</li>
+       <li>int i;</li>
+       <li> boolean bool;</li>
+       <li>@Resource</li>
+       <li>Service service;</li>
+       </ul>
         ]]>
 
 
@@ -34,34 +36,12 @@
 
     <change-notes>
         <![CDATA[
-        a.v1.0 author daikai date 2019-11-02</br>
-        more details</br>
-        /**</br>
-        * int</br>
-        */</br>
-        int i;</br></br>
-
-        /*</br>
-        * service</br>
-        */</br>
-        @Resource</br>
-        Service service;</br></br>
-
-        // bool</br>
-        boolean bool;</br></br>
-
-        after handle:</br>
-        /**</br>
-        * int</br>
-        */</br>
-        int i;</br>
-        // bool</br>
-        boolean bool;</br>
-        /*</br>
-        * service</br>
-        */</br>
-        @Resource</br>
-        Service service;</br>
+        <ul>
+        <li>v1.1 modify short key</li>
+        <li>v1.0 author daikai date 2019-11-02</li>
+        </ul>
+        more details
+        @see <a>https://github.com/dkwx/intellj-format-fields-plugin</a>
          ]]>
     </change-notes>
 
