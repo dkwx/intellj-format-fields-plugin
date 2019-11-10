@@ -7,10 +7,6 @@ import com.intellij.psi.PsiElement;
  * @date : 2019-11-04 14:35
  */
 public class SelectSortModel {
-
-
-    private int endLine;
-    private int startLine;
     /**
      * 插入类型
      * 0 add
@@ -18,6 +14,10 @@ public class SelectSortModel {
      * -1 add before
      */
     private InsertType insertType;
+
+    private int endLine;
+    private int startLine;
+
     private PsiElement locationElement;
 
     public SelectSortModel(int startLine, int endLine, InsertType insertType, PsiElement locationElement) {
