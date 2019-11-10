@@ -14,6 +14,9 @@
           <dd> Unselected, the entire file is formatted by default, and idea is automatically grouped by the modifier of the property, which unfortunately cannot be changed at this time. 
         Selected content, will only format selected content, and completely sorted by length, no grouping, it is recommended that selected content format. </dd>
         </dl>
+        <p>你可以在code菜单里找到它，或者使用快捷键shift alt j,但是可能会有快捷键冲突</p>
+        <p>You can find it in the code menu Or use shortcuts shift alt j.But there may be a shortcut conflict </p>
+
         <p><img src="https://raw.githubusercontent.com/dkwx/intellj-format-fields-plugin/master/image/demo1.png"
             border="0" width="612" height="485" alt="with-HTML.png"/></p>
 
