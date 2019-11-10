@@ -19,3 +19,15 @@
         boolean bool;
         @Resource
         Service service;
+您可以通过以下操作为项目提供支持：
+* 在GitHub上Star此项目
+* 将插件分享给您的朋友/同事
+* 提交PR
+* 反馈问题
+* 提出您的建议
+* 通过支付宝或微信捐赠
+  | 支付宝 | 微信 |
+  | :----: | :--: |
+  | ![支付宝](./image/alipay.jpeg) | ![微信](./image/wechatpay.jpeg) |
+
+感谢您的支持！

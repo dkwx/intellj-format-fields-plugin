@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="857b2834-97bb-4b14-a556-ba18401009e7" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/META-INF/pluginIcon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-plugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/my-plugin.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state relative-caret-position="131">
+              <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="623">
+                <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -65,13 +74,13 @@
         <option value="$PROJECT_DIR$/src/com/dk/pyramid/assist/NotifyUtils.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/dk/pyramid/assist/SortFieldAssist.java" />
         <option value="$PROJECT_DIR$/src/com/dk/pyramid/assist/ElementOptAssist.java" />
         <option value="$PROJECT_DIR$/src/com/dk/pyramid/model/SelectSortModel.java" />
         <option value="$PROJECT_DIR$/src/com/dk/pyramid/action/FormatFieldWithPyramidAction.java" />
         <option value="$PROJECT_DIR$/src/com/dk/pyramid/demo/FormatFieldWithPyramidDemo.java" />
         <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -122,12 +131,6 @@
             <path>
               <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -135,13 +138,6 @@
               <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pyramid" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pyramid" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -252,7 +248,7 @@
       <workItem from="1573384506566" duration="352000" />
       <workItem from="1573384880236" duration="557000" />
       <workItem from="1573385678958" duration="36000" />
-      <workItem from="1573385737004" duration="269000" />
+      <workItem from="1573385737004" duration="646000" />
     </task>
     <task id="LOCAL-00001" summary="增加序列">
       <created>1572870023353</created>
@@ -499,17 +495,24 @@
       <option name="project" value="LOCAL" />
       <updated>1573384617521</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="增加icon">
+      <created>1573386037763</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1573386037763</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66391000" />
+    <option name="totallyTimeSpent" value="66768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="830" extended-state="0" />
     <layout>
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49791667" visible="true" weight="0.29971388" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49791667" visible="true" weight="0.29971388" />
       <window_info id="Structure" order="2" sideWeight="0.50208336" side_tool="true" weight="0.2639485" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -530,7 +533,7 @@
       <window_info anchor="bottom" id="Tool Output" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.29090908" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.29090908" />
       <window_info anchor="bottom" id="ANTLR Preview" order="15" weight="0.32867134" />
       <window_info anchor="bottom" id="调试" order="16" sideWeight="0.49928468" weight="0.43356642" />
       <window_info anchor="right" id="Palette" order="0" />
@@ -547,7 +550,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49791667" visible="true" weight="0.27968526" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49791667" visible="true" weight="0.29971388" />
       <window_info id="Structure" order="2" sideWeight="0.50208336" side_tool="true" weight="0.2639485" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -646,7 +649,8 @@
     <MESSAGE value="修改描述图片" />
     <MESSAGE value="添加演示文件" />
     <MESSAGE value="增加简介和演示文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加简介和演示文件" />
+    <MESSAGE value="增加icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加icon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -850,16 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="273">
-            <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1141,8 +1135,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="131">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="623">
+            <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
