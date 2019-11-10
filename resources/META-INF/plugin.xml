@@ -15,20 +15,27 @@
           <dd> Unselected, the entire file is formatted by default, and idea is automatically grouped by the modifier of the property, which unfortunately cannot be changed at this time. 
         Selected content, will only format selected content, and completely sorted by length, no grouping, it is recommended that selected content format. </dd>
         </dl>
-       <li>
+            <p><img src="https://raw.githubusercontent.com/dkwx/intellj-format-fields-plugin/master/image/WechatIMG34.png"
+                 border="0" width="612" height="485" alt="with-HTML.png"/></p>
+       <p>
+       格式化例子见下,For example:
+       </p>
        <ul>
-       <li> 格式化例子见下:</li>
-       <li>For example:</li>
        <li>int i;</li>
        <li> @Resource</li>
        <li>Service service;</li>
        <li> boolean bool;</li>
-       <li> After handle:</li>
+       </ul>
+       <p>
+      After handle:
+       </p>
+       <ul>
        <li>int i;</li>
        <li> boolean bool;</li>
        <li>@Resource</li>
        <li>Service service;</li>
        </ul>
+
         ]]>
 
 
