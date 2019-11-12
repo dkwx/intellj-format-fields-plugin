@@ -31,3 +31,5 @@
   | ![支付宝](./image/alipay.jpeg) | ![微信](./image/wechatpay.jpeg) |
 
 感谢您的支持！
+
+感谢 韦一笑捐款 10元
